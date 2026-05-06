@@ -1,0 +1,39 @@
+﻿node.exe : Initialising login role...
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Users\user\AppData\Roaming\n ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpec 
+   ified: (Initialising login role..  
+  .:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeC 
+   ommandError
+ 
+Connecting to remote database...
+The remote database's migration 
+history does not match local files in 
+supabase\migrations directory.
+
+Make sure your local git repo is 
+up-to-date. If the error persists, 
+try repairing the migration history 
+table:
+supabase migration repair --status 
+reverted 20251222
+supabase migration repair --status 
+reverted 20251226
+supabase migration repair --status 
+applied 20251222
+supabase migration repair --status 
+applied 20251222
+supabase migration repair --status 
+applied 20251222
+supabase migration repair --status 
+applied 20251226
+supabase migration repair --status 
+applied 20251226
+supabase migration repair --status 
+applied 20251226
+

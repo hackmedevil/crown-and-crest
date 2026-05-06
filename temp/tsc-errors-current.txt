@@ -1,0 +1,17 @@
+﻿src/app/(storefront)/product/[slug]/page.tsx(151,51): error TS2322: Type 'RelatedProduct[]' is not assignable to type 'Product[]'.
+  Type 'RelatedProduct' is missing the following properties from type 'Product': description, product_variants
+src/app/(storefront)/shop/page.tsx(106,37): error TS2345: Argument of type '(p: ProductBasic) => string' is not assignable to parameter of type '(value: GenericStringError, index: number, array: GenericStringError[]) => string'.
+  Types of parameters 'p' and 'value' are incompatible.
+    Type '{ error: true; } & String' is missing the following properties from type 'ProductBasic': id, name, slug, base_price, and 2 more.
+src/lib/cart/actions.ts(85,10): error TS2352: Conversion of type '{ id: any; quantity: any; variant_id: any; product_id: any; products: { id: any; name: any; slug: any; base_price: any; image_url: any; is_active: any; created_at: any; }; variants: { available_to_sell: any; ... 8 more ...; products: { ...; }[]; }; }[]' to type 'CartItem[]' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type '{ id: any; quantity: any; variant_id: any; product_id: any; products: { id: any; name: any; slug: any; base_price: any; image_url: any; is_active: any; created_at: any; }; variants: { available_to_sell: any; ... 8 more ...; products: { id: any; name: any; slug: any; base_price: any; image_url: any; is_active: any; c...' is not comparable to type 'CartItem'.
+    Types of property 'variants' are incompatible.
+      Type '{ available_to_sell: any; is_out_of_stock: boolean; id: any; sku: any; size: any; color: any; price_override: any; stock_quantity: any; product_id: any; products: { id: any; name: any; slug: any; base_price: any; image_url: any; is_active: any; created_at: any; }[]; }' is missing the following properties from type 'PDPVariant': low_stock_threshold, enabled, position, created_at
+src/lib/cart/actions.ts(384,3): error TS2322: Type '({ id: string; quantity: number; variant_id: string; product_id: any; products: { id: any; name: any; slug: any; base_price: any; images: any; image_url: any; is_active: any; created_at: any; category: any; }; variants: { ...; }; } | null)[]' is not assignable to type 'CartItem[]'.
+  Type '{ id: string; quantity: number; variant_id: string; product_id: any; products: { id: any; name: any; slug: any; base_price: any; images: any; image_url: any; is_active: any; created_at: any; category: any; }; variants: { ...; }; } | null' is not assignable to type 'CartItem'.
+    Type 'null' is not assignable to type 'CartItem'.
+src/lib/cart/actions.ts(399,29): error TS2677: A type predicate's type must be assignable to its parameter's type.
+  Type 'CartItem' is not assignable to type '{ id: string; quantity: number; variant_id: string; product_id: any; products: { id: any; name: any; slug: any; base_price: any; images: any; image_url: any; is_active: any; created_at: any; category: any; }; variants: { ...; }; }'.
+    Types of property 'products' are incompatible.
+      Type 'Product' is not assignable to type '{ id: any; name: any; slug: any; base_price: any; images: any; image_url: any; is_active: any; created_at: any; category: any; }'.
+        Property 'images' is optional in type 'Product' but required in type '{ id: any; name: any; slug: any; base_price: any; images: any; image_url: any; is_active: any; created_at: any; category: any; }'.

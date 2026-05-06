@@ -1,0 +1,30 @@
+﻿Production Performance Validation Results
+Date: 2026-03-07 22:16:43
+URL: https://crowncrest.store/product/crown-crest-premium-plain-cotton-t-shirt-180-gsm-super-combed
+
+LIGHTHOUSE METRICS (Mobile):
+  Performance Score: 77.0
+  LCP: 4.04s [FAIL]
+  TTFB: 1323ms [FAIL]
+  CLS: 0.000054 [PASS]
+  FCP: 3.16s
+  TBT: 2ms
+  Speed Index: 5.37s
+
+CACHE BEHAVIOR:
+  Cold TTFB: 129.85ms
+  Warm TTFB: 1070ms
+  Cache Improvement: -724%
+
+UX VALIDATION:
+  Variant Switching: FAIL
+
+RECOMMENDATIONS:
+  - LCP still above target: Implement hero image preload + width hints
+  - TTFB above target: Check Supabase query performance + edge caching
+  - UX issues: Debug variant interaction logic
+
+Next Steps:
+  A. Enable RUM monitoring (see src/lib/analytics/core-web-vitals.ts)
+  B. Monitor for 3-7 days to collect real-user data
+  C. Review Google Search Console Core Web Vitals report

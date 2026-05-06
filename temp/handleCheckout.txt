@@ -1,0 +1,49 @@
+﻿    const handleCheckout = async () => {
+        if (!user) {
+            router.push('/auth/login?redirect=/cart')
+            return
+        }
+        if (cartItems.length === 0) {
+            showError('Cart is empty')
+            return
+        }
+        if (isCheckingOut) return
+        setIsCheckingOut(true)
+        try {
+            if (typeof window.Razorpay === 'undefined') {
+                throw new Error('Razorpay failed to load. Please refresh the page.')
+            }
+            const res = await fetch('/api/razorpay/order', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+            })
+            const data = await res.json()
+            if (!res.ok) {
+                throw new Error(data.error || 'Failed to create order')
+            }
+            if (!data.razorpay_order_id) {
+                throw new Error('MAGIC_CHECKOUT_FAILED: No Razorpay order ID')
+            }
+            console.log('[MAGIC_CHECKOUT] Direct launch from Cart. Order:', data.order_id)
+            const options = {
+                key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+                order_id: data.razorpay_order_id,
+                callback_url: ${window.location.origin}/order/success?orderId=,
+                name: 'Crown & Crest',
+                description: 'Premium Fashion Order',
+                theme: { color: '#000000' }
+            }
+            const rzp = new window.Razorpay(options)
+            rzp.on('payment.failed', function(response){
+                console.error('[MAGIC_CHECKOUT] Payment failed:', response.error)
+                setIsCheckingOut(false)
+                showError('Payment failed: ' + (response.error.description || 'Unknown error'))
+            })
+            rzp.open()
+        } catch (error) {
+            console.error('[MAGIC_CHECKOUT] Error:', error)
+            showError(error.message || 'Failed to initiate checkout')
+            setIsCheckingOut(false)
+        }
+    }
+

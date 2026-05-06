@@ -1,0 +1,326 @@
+﻿
+> crown-and-crest@0.1.0 lint
+> eslint
+
+
+C:\Users\user\Desktop\Web App\crown-and-crest\scripts\run-migration.ts
+  16:11  warning  'data' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\customers\[customerId]\page.tsx
+    5:42  warning  'Calendar' is defined but never used      @typescript-eslint/no-unused-vars
+   10:46  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  132:72  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  187:56  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\orders\OrdersClient.tsx
+  33:24  error    Unexpected any. Specify a different type                                                                        @typescript-eslint/no-explicit-any
+  47:8   warning  React Hook useEffect has a missing dependency: 'fetchOrders'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  68:18  warning  'error' is defined but never used                                                                               @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\orders\[orderId]\ShipmentActions.tsx
+  27:18  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+  44:18  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\orders\[orderId]\page.tsx
+  132:49  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\page.tsx
+   3:82  warning  'Sparkles' is defined but never used                             @typescript-eslint/no-unused-vars
+  67:77  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\products\ProductsTable.tsx
+  6:37  warning  'Trash2' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\products\[productId]\page.tsx
+  10:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  63:61  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\products\actions.ts
+    7:50  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+    7:65  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  147:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  189:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  214:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\settings\page.tsx
+  184:61  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(auth)\auth\AuthClient.tsx
+   39:24  error    Unexpected any. Specify a different type               @typescript-eslint/no-explicit-any
+   97:9   warning  'isPhoneValid' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  100:9   warning  'isEmailAuthValid' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  138:18  warning  'err' is defined but never used                        @typescript-eslint/no-unused-vars
+  155:16  warning  'clearError' is defined but never used                 @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(auth)\auth\email-verify\page.tsx
+  75:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(auth)\auth\forgot-password\ForgotPasswordClient.tsx
+  17:24  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  95:48  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(auth)\auth\login\LoginClient.tsx
+  14:3   warning  'isSignInWithEmailLink' is defined but never used  @typescript-eslint/no-unused-vars
+  15:3   warning  'signInWithEmailLink' is defined but never used    @typescript-eslint/no-unused-vars
+  41:24  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(auth)\auth\steps\EmailStep.tsx
+   32:3   warning  'onBack' is defined but never used                               @typescript-eslint/no-unused-vars
+  128:15  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(auth)\auth\steps\EnterStep.tsx
+  31:25  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(auth)\auth\steps\OtpStep.tsx
+  25:3  warning  'onBack' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\cart\CartClient.tsx
+    7:31  warning  'ArrowRight' is defined but never used                                                                       @typescript-eslint/no-unused-vars
+   16:19  error    Unexpected any. Specify a different type                                                                     @typescript-eslint/no-explicit-any
+   20:55  error    Unexpected any. Specify a different type                                                                     @typescript-eslint/no-explicit-any
+   52:8   warning  React Hook useEffect has a missing dependency: 'loadCart'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  129:27  error    Unexpected any. Specify a different type                                                                     @typescript-eslint/no-explicit-any
+  158:22  warning  'err' is defined but never used                                                                              @typescript-eslint/no-unused-vars
+  208:58  error    Unexpected any. Specify a different type                                                                     @typescript-eslint/no-explicit-any
+  213:25  error    Unexpected any. Specify a different type                                                                     @typescript-eslint/no-explicit-any
+  234:80  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                              react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\order\failure\OrderFailureClient.tsx
+   9:72  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  24:34  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\order\success\OrderSuccessClient.tsx
+    3:10  warning  'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+    3:21  warning  'useState' is defined but never used        @typescript-eslint/no-unused-vars
+    6:33  warning  'MapPin' is defined but never used          @typescript-eslint/no-unused-vars
+    6:66  warning  'Home' is defined but never used            @typescript-eslint/no-unused-vars
+    9:15  warning  'OrderWithItems' is defined but never used  @typescript-eslint/no-unused-vars
+   11:71  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+   11:83  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+  130:51  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\product\[slug]\ProductDetailClient.tsx
+    9:5    warning  'Share2' is defined but never used                               @typescript-eslint/no-unused-vars
+   11:5    warning  'ChevronRight' is defined but never used                         @typescript-eslint/no-unused-vars
+   16:5    warning  'Minus' is defined but never used                                @typescript-eslint/no-unused-vars
+   17:5    warning  'Plus' is defined but never used                                 @typescript-eslint/no-unused-vars
+   32:14   error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  510:77   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  510:138  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  510:174  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\shop\ShopClient.tsx
+    7:46  warning  'ChevronLeft' is defined but never used                    @typescript-eslint/no-unused-vars
+    7:59  warning  'Filter' is defined but never used                         @typescript-eslint/no-unused-vars
+    7:67  warning  'ArrowUpDown' is defined but never used                    @typescript-eslint/no-unused-vars
+    7:80  warning  'ChevronDown' is defined but never used                    @typescript-eslint/no-unused-vars
+   29:12  warning  'mobileFiltersOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+   29:31  warning  'setMobileFiltersOpen' is assigned a value but never used  @typescript-eslint/no-unused-vars
+   30:12  warning  'mobileSortOpen' is assigned a value but never used        @typescript-eslint/no-unused-vars
+   43:11  warning  'sortBy' is assigned a value but never used                @typescript-eslint/no-unused-vars
+   46:11  warning  'allCategories' is assigned a value but never used         @typescript-eslint/no-unused-vars
+   47:11  warning  'sizes' is assigned a value but never used                 @typescript-eslint/no-unused-vars
+   78:11  warning  'toggleSize' is assigned a value but never used            @typescript-eslint/no-unused-vars
+   83:11  warning  'setSort' is assigned a value but never used               @typescript-eslint/no-unused-vars
+  130:11  warning  'totalFilters' is assigned a value but never used          @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\shop\page.tsx
+  94:15  warning  'ProductBasic' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\orders\export\route.ts
+   77:36  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  136:27  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\auth\session\route.ts
+  81:7  warning  'user' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\auth\validate-phone\route.ts
+  58:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\cron\cleanup-notifications\route.ts
+  40:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\cron\health-check\route.ts
+  45:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\razorpay\cod\eligibility\route.ts
+  24:31  warning  'customer_details' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\razorpay\order\route.ts
+  20:28  warning  'req' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\razorpay\shipping\route.ts
+  84:60  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\razorpay\verify\route.ts
+   98:19  warning  'snapshotRes' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  135:19  warning  'commitResult' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\razorpay\webhook\route.ts
+   92:45  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   92:59  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   92:71  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  122:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  122:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  122:65  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  151:43  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  151:57  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  179:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  179:47  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\run-migration\route.ts
+   6:9   warning  'supabase' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  71:17  error    Unexpected any. Specify a different type       @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\shiprocket\webhook\route.ts
+  44:75  warning  'activities' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  62:23  error    Unexpected any. Specify a different type         @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\AdminNav.tsx
+  18:10  warning  'showCommandMenu' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\ErrorBoundary.tsx
+  30:48  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  48:31  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\Header.client.tsx
+  59:7  warning  'links' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\PhoneVerificationModal.tsx
+   29:66  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   45:33  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   46:32  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   70:44  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   84:25  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  122:25  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  175:31  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\BulkActions.tsx
+  36:18  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\OrderStatusActions.tsx
+  52:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\products\ProductForm.tsx
+    3:31  warning  'useCallback' is defined but never used                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+    6:21  warning  'Plus' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+    6:38  warning  'HelpCircle' is defined but never used                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+    6:50  warning  'GripVertical' is defined but never used                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+    6:81  warning  'ImageIcon' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+    7:10  warning  'supabase' is defined but never used                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+   37:19  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+   69:42  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+   70:42  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  152:8   warning  React Hook useEffect has a missing dependency: 'variants'. Either include it or remove the dependency array                                                                                                                                                                              react-hooks/exhaustive-deps
+  154:11  warning  'addOption' is assigned a value but never used                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+  155:11  warning  'removeOption' is assigned a value but never used                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  157:11  warning  'updateOptionName' is assigned a value but never used                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+  180:76  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  194:15  warning  'toastId' is assigned a value but never used                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+  241:25  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  349:41  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  434:83  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  491:63  warning  'idx' is defined but never used                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\products\VariantImageSelector.tsx
+  16:5  warning  'variantId' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\ui\Button.tsx
+  2:10  warning  'tokens' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\admin\order-actions.ts
+   55:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   90:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  130:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  178:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\actions.ts
+   29:62  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  181:3   warning  'imageUrl' is defined but never used      @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\client.ts
+   29:22  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+   91:11  warning  'error' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  124:11  warning  'error' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  209:11  warning  'error' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  257:19  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\failover.ts
+   91:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  193:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  204:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\health-monitor.ts
+   17:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   39:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  124:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  137:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\provider-config.ts
+  41:18  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\server-actions.ts
+  23:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\settings\actions.ts
+   57:42  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+   77:27  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  141:19  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  199:19  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  249:19  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  328:11  warning  'decryptedKey' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  329:42  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  339:19  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\settings\discovery-actions.ts
+   61:19  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+   94:23  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+   96:20  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  115:19  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  142:23  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  146:20  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  165:19  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  196:23  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  197:20  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  208:19  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  231:13  warning  'generateText' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  266:19  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  303:74  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  318:50  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\cloudinary\actions.ts
+  47:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  66:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\notifications\actions.ts
+  19:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\observability\errorTracking.ts
+   12:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   76:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   89:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  100:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  112:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\observability\structuredLogging.ts
+   14:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  103:90  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\orders\feedback.ts
+  129:17  warning  'productSizeProfiles' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\shiprocket\client.ts
+  10:10  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\shiprocket\shipment.ts
+   82:47  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  184:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\shiprocket\shipping.ts
+  114:3  warning  'codAmount' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\sizebook\admin-actions.ts
+  86:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 195 problems (119 errors, 76 warnings)
+

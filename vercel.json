@@ -1,0 +1,28 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/cleanup-reservations",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cron/health-check",
+      "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/cron/sync-qikink-orders",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cron/process-embeddings",
+      "schedule": "0 12 * * *"
+    },
+    {
+      "path": "/api/cron/refresh-rankings",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/cleanup-notifications",
+      "schedule": "0 18 * * *"
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+'use client'
+
+import { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import { Minus, Plus, Trash2, ArrowRight, Lock } from 'lucide-react'
+import { getGuestCart, updateGuestCartQuantity, removeFromGuestCart } from '@/lib/cart/guestCart'
+import { getCart, getGuestCartDetails, updateCartQuantity, removeFromCart as removeFromCartAction, syncGuestCart } from '@/lib/cart/actions'
+import type { CartItem } from '@/types/cart'
+import { useToast } from '@/hooks/useToast'
+
+// Declare Razorpay on window
+declare global {
+    interface Window {
+        Razorpay: any
+    }
+}
+
+export default function CartClient({ user }: { user?: any }) {
+    const router = useRouter()
+    const { showSuccess, showError } = useToast()
+    const [cartItems, setCartItems] = useState<CartItem[]>([])
+    const [isLoading, setIsLoading] = useState(true)
+    const [subtotal, setSubtotal] = useState(0)
+    const [isCheckingOut, setIsCheckingOut] = useState(false)
+    const hasSyncedRef = useRef(false) // Prevent duplicate syncs
+
+    useEffect(() => {
+        loadCart()
+
+        // Listen for storage events (updates from other tabs or addToCart calls)
+        const handleStorageChange = (e: StorageEvent) => {
+            if (e.key === 'guest_cart' && !user) {
+                loadCart()
+            }
+        }
+        window.addEventListener('storage', handleStorageChange)
+
+        // Load Razorpay script
+        const script = document.createElement('script')
+        script.src = 'https://checkout.razorpay.com/v1/checkout.js'
+        script.async = true
+        document.body.appendChild(script)
+
+        return () => {
+            window.removeEventListener('storage', handleStorageChange)
+            if (document.body.contains(script)) {
+                document.body.removeChild(script)
+            }
+        }
+    }, [user])
+
+    const loadCart = async () => {
+        setIsLoading(true)
+
+        try {
+            if (user) {
+                // AUTHENTICATED: Sync guest cart if exists, then fetch auth cart
+                const guestCartStr = localStorage.getItem('guest_cart')
+                if (guestCartStr && !hasSyncedRef.current) {
+                    try {
+                        const guestItems = JSON.parse(guestCartStr)
+                        if (Array.isArray(guestItems) && guestItems.length > 0) {
+                            // CRITICAL FIX: Clear guest cart BEFORE syncing to prevent race condition
+                            localStorage.removeItem('guest_cart')
+                            hasSyncedRef.current = true // Mark as synced
+
+                            // Now sync the items (this triggers revalidatePath, but guest cart is already cleared)
+                            await syncGuestCart(guestItems)
+                        }
+                    } catch (e) {
+                        console.error('Failed to parse guest cart during sync', e)
+                    }
+                }
+
+                // HARD GUARD: Read ONLY auth cart when authenticated
+                const items = await getCart()
+                setCartItems(items)
+                calculateTotals(items)
+            } else {
+                // GUEST: Fetch from Local Storage
+                const guestItems = getGuestCart()
+                if (guestItems.length === 0) {
+                    setCartItems([])
+                    setSubtotal(0)
+                    setIsLoading(false)
+                    return
+                }
+                const details = await getGuestCartDetails(guestItems)
+                setCartItems(details)
+                calculateTotals(details)
+            }
+        } catch (error) {
+            console.error('Failed to load cart', error)
+            showError('Failed to load cart items')
+        } finally {
+            setIsLoading(false)
+        }
+    }
+
+    const calculateTotals = (items: CartItem[]) => {
+        const total = items.reduce((sum, item) => {
+            // Check for price overrides or default to base price
+            const price = item.variants?.price_override ?? item.products.base_price
+            return sum + (price * item.quantity)
+        }, 0)
+        setSubtotal(total)
+    }
+
+    const handleUpdateQuantity = async (item: CartItem, newQuantity: number) => {
+        if (newQuantity < 1) return
+        const availableStock = item.variants.available_to_sell ?? item.variants.stock_quantity
+        if (newQuantity > availableStock) {
+            showError('Cannot add more than available stock')
+            return
+        }
+
+        if (user) {
+            // Server Action
+            try {
+                await updateCartQuantity(item.id, newQuantity)
+                // Optimistic update
+                const updatedItems = cartItems.map(i =>
+                    i.id === item.id ? { ...i, quantity: newQuantity } : i
+                )
+                setCartItems(updatedItems)
+                calculateTotals(updatedItems)
+            } catch (err: any) {
+                // Show specific error message if available
+                const errorMessage = err?.message || 'Failed to update quantity'
+                showError(errorMessage)
+                // Reload cart to reset to actual state
+                loadCart()
+            }
+        } else {
+            // Local Storage
+            const success = updateGuestCartQuantity(item.product_id, item.variant_id, newQuantity)
+            if (success) {
+                const updatedItems = cartItems.map(i =>
+                    i.id === item.id ? { ...i, quantity: newQuantity } : i
+                )
+                setCartItems(updatedItems)
+                calculateTotals(updatedItems)
+            }
+        }
+    }
+
+    const handleRemove = async (item: CartItem) => {
+        if (user) {
+            // Server Action
+            try {
+                await removeFromCartAction(item.id)
+                const updatedItems = cartItems.filter(i => i.id !== item.id)
+                setCartItems(updatedItems)
+                calculateTotals(updatedItems)
+                showSuccess('Item removed from cart')
+            } catch (err) {
+                showError('Failed to remove item')
+            }
+        } else {
+            // Local Storage
+            const success = removeFromGuestCart(item.product_id, item.variant_id)
+            if (success) {
+                const updatedItems = cartItems.filter(i => i.id !== item.id)
+                setCartItems(updatedItems)
+                calculateTotals(updatedItems)
+                showSuccess('Item removed from cart')
+            }
+        }
+    }
+
+    if (isLoading) {
+        return (
+            <div className="min-h-[60vh] flex items-center justify-center">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-black"></div>
+            </div>
+        )
+    }
+
+    if (cartItems.length === 0) {
+        return (
+            <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
+                <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6">
+                    <Trash2 className="w-8 h-8 text-gray-400" />
+                </div>
+                <h2 className="text-2xl font-display text-gray-900 mb-2">Your cart is empty</h2>
+                <p className="text-gray-500 mb-8 max-w-sm">Looks like you haven't added anything to your cart yet.</p>
+                <Link
+                    href="/shop"
+                    className="bg-black text-white px-8 py-3 rounded text-sm font-bold tracking-widest uppercase hover:bg-gray-800 transition-colors"
+                >
+                    Start Shopping
+                </Link>
+            </div>
+        )
+    }
+
+    return (
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12">
+            <h1 className="text-3xl font-display text-gray-900 mb-8">Shopping Cart <span className="text-gray-400 text-lg">({cartItems.length} items)</span></h1>
+
+            <div className="flex flex-col lg:flex-row gap-12">
+                {/* Cart Items */}
+                <div className="flex-1 space-y-8">
+                    {cartItems.map((item) => {
+                        const isOutOfStock = item.variants.is_out_of_stock ?? false
+
+                        return (
+                            <div key={item.id} className={`flex gap-4 md:gap-8 pb-8 border-b border-gray-100 last:border-0 relative group ${isOutOfStock ? 'opacity-60' : ''}`}>
+                                <div className="relative w-24 h-32 md:w-32 md:h-40 bg-gray-100 rounded-lg overflow-hidden shrink-0">
+                                    <Image
+                                        src={item.products.image_url || '/placeholder.png'}
+                                        alt={item.products.name}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                    {isOutOfStock && (
+                                        <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
+                                            <span className="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded">OUT OF STOCK</span>
+                                        </div>
+                                    )}
+                                </div>
+
+                                <div className="flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <div className="flex justify-between items-start mb-2">
+                                            <Link href={`/product/${item.products.slug}`} className="text-lg font-bold text-gray-900 hover:underline decoration-1 underline-offset-4">
+                                                {item.products.name}
+                                            </Link>
+                                            <p className="text-lg font-bold text-gray-900">₹{(item.products.base_price * item.quantity).toLocaleString('en-IN')}</p>
+                                        </div>
+                                        <p className="text-sm text-gray-500 mb-1">{item.products.category}</p>
+                                        <div className="flex gap-4 text-sm text-gray-600">
+                                            <p>Size: <span className="font-medium text-gray-900">{item.variants.size}</span></p>
+                                            <p>Color: <span className="font-medium text-gray-900">{item.variants.color}</span></p>
+                                        </div>
+                                        {isOutOfStock && (
+                                            <p className="text-xs text-red-600 font-medium mt-2">⚠️ This item is currently out of stock. Please remove it from your cart.</p>
+                                        )}
+                                    </div>
+
+                                    <div className="flex justify-between items-end">
+                                        <div className="flex items-center border border-gray-200 rounded">
+                                            <button
+                                                onClick={() => handleUpdateQuantity(item, item.quantity - 1)}
+                                                className="p-2 hover:bg-gray-50 text-gray-600 disabled:opacity-50"
+                                                disabled={item.quantity <= 1 || isOutOfStock}
+                                            >
+                                                <Minus className="w-3 h-3" />
+                                            </button>
+                                            <span className="w-8 text-center text-sm font-medium">{item.quantity}</span>
+                                            <button
+                                                onClick={() => handleUpdateQuantity(item, item.quantity + 1)}
+                                                className="p-2 hover:bg-gray-50 text-gray-600 disabled:opacity-50"
+                                                disabled={isOutOfStock}
+                                            >
+                                                <Plus className="w-3 h-3" />
+                                            </button>
+                                        </div>
+
+                                        <button
+                                            onClick={() => handleRemove(item)}
+                                            className="text-xs text-red-500 hover:text-red-600 font-medium underline underline-offset-4"
+                                        >
+                                            Remove
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+
+                {/* Summary */}
+                <div className="lg:w-96 shrink-0">
+                    <div className="bg-gray-50 rounded-xl p-6 sticky top-24">
+                        <h2 className="text-lg font-bold text-gray-900 mb-6 uppercase tracking-wider">Order Summary</h2>
+
+                        <div className="space-y-4 mb-6">
+                            <div className="flex justify-between text-sm">
+                                <span className="text-gray-600">Subtotal</span>
+                                <span className="font-medium text-gray-900">₹{subtotal.toLocaleString('en-IN')}</span>
+                            </div>
+                            <div className="flex justify-between text-sm">
+                                <span className="text-gray-600">Shipping</span>
+                                <span className="text-green-600 font-medium">Free</span>
+                            </div>
+                            <div className="flex justify-between text-sm">
+                                <span className="text-gray-600">Tax</span>
+                                <span className="text-gray-500 text-xs">(Calculated at checkout)</span>
+                            </div>
+                        </div>
+
+                        <div className="border-t border-gray-200 pt-4 mb-8">
+                            <div className="flex justify-between items-end">
+                                <span className="text-base font-bold text-gray-900">Total</span>
+                                <span className="text-2xl font-bold text-gray-900">₹{subtotal.toLocaleString('en-IN')}</span>
+                            </div>
+                            <p className="text-xs text-gray-500 mt-1">Inclusive of all taxes</p>
+                        </div>
+
+                        <button
+                            onClick={handleCheckout}
+                            disabled={isCheckingOut || cartItems.length === 0}
+                            className="w-full bg-black text-white flex items-center justify-center gap-2 py-4 rounded-lg font-bold text-sm uppercase tracking-widest hover:bg-gray-900 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-black/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            <Lock className="w-4 h-4" />
+                            {isCheckingOut ? 'Processing...' : 'Secure Checkout'}
+                        </button>
+
+                        <div className="mt-6 flex justify-center gap-4 opacity-50 grayscale">
+                            {/* Payment Icons Placeholder */}
+                            <div className="h-6 w-10 bg-gray-200 rounded"></div>
+                            <div className="h-6 w-10 bg-gray-200 rounded"></div>
+                            <div className="h-6 w-10 bg-gray-200 rounded"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}

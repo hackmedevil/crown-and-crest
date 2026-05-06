@@ -1,0 +1,30 @@
+﻿{
+    "to":  "919805447414",
+    "template":  {
+                     "components":  [
+                                        {
+                                            "type":  "body",
+                                            "parameters":  [
+                                                               {
+                                                                   "text":  "ORD-TEST-001",
+                                                                   "type":  "text"
+                                                               },
+                                                               {
+                                                                   "text":  "INR 999",
+                                                                   "type":  "text"
+                                                               },
+                                                               {
+                                                                   "text":  "Crown \u0026 Crest",
+                                                                   "type":  "text"
+                                                               }
+                                                           ]
+                                        }
+                                    ],
+                     "name":  "payment_confirmed",
+                     "language":  {
+                                      "code":  "en_US"
+                                  }
+                 },
+    "messaging_product":  "whatsapp",
+    "type":  "template"
+}

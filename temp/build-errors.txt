@@ -1,0 +1,27 @@
+﻿src/app/(admin)/admin/orders/OrdersClient.tsx(113,44): error TS2345: Argument of type 'FilterState' is not assignable to parameter of type 'string | URLSearchParams | Record<string, string> | string[][] | undefined'.
+  Type 'FilterState' is not assignable to type 'Record<string, string>'.
+    Index signature for type 'string' is missing in type 'FilterState'.
+src/app/(storefront)/cart/CartClient.tsx(259,60): error TS2339: Property 'image_url' does not exist on type 'Product'.
+src/app/(storefront)/product/[slug]/page.tsx(130,51): error TS2322: Type '{ id: any; name: any; slug: any; base_price: any; image_url: any; category: any; }[]' is not assignable to type 'Product[]'.
+  Type '{ id: any; name: any; slug: any; base_price: any; image_url: any; category: any; }' is missing the following properties from type 'Product': description, product_variants
+src/app/(storefront)/shop/ShopClient.tsx(194,60): error TS2552: Cannot find name 'setSelectedSize'. Did you mean 'selectedSize'?
+src/app/(storefront)/shop/ShopClient.tsx(265,60): error TS2552: Cannot find name 'setSelectedSize'. Did you mean 'selectedSize'?
+src/app/api/shiprocket/webhook/route.ts(73,23): error TS2339: Property 'tracking_id' does not exist on type '{ id: any; shipment_status: any; }'.
+src/app/api/shiprocket/webhook/route.ts(78,45): error TS2339: Property 'actual_delivery_date' does not exist on type '{ id: any; shipment_status: any; }'.
+src/components/AdminNav.tsx(6,30): error TS2307: Cannot find module './admin/NotificationBell' or its corresponding type declarations.
+src/components/AdminNav.tsx(7,25): error TS2307: Cannot find module './admin/CommandMenu' or its corresponding type declarations.
+src/hooks/useVariantMedia.ts(38,23): error TS2551: Property 'is_enabled' does not exist on type 'PDPVariant'. Did you mean 'enabled'?
+src/lib/cart/actions.ts(79,10): error TS2352: Conversion of type '{ id: any; quantity: any; variant_id: any; product_id: any; products: { id: any; name: any; slug: any; base_price: any; image_url: any; is_active: any; created_at: any; }; variants: { available_to_sell: any; ... 8 more ...; products: { ...; }[]; }; }[]' to type 'CartItem[]' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type '{ id: any; quantity: any; variant_id: any; product_id: any; products: { id: any; name: any; slug: any; base_price: any; image_url: any; is_active: any; created_at: any; }; variants: { available_to_sell: any; ... 8 more ...; products: { id: any; name: any; slug: any; base_price: any; image_url: any; is_active: any; c...' is not comparable to type 'CartItem'.
+    Types of property 'products' are incompatible.
+      Type '{ id: any; name: any; slug: any; base_price: any; image_url: any; is_active: any; created_at: any; }' is missing the following properties from type 'Product': active, published, featured, updated_at
+src/lib/cart/actions.ts(378,3): error TS2322: Type '({ id: string; quantity: number; variant_id: string; product_id: any; products: { id: any; name: any; slug: any; base_price: any; images: any; image_url: any; is_active: any; created_at: any; category: any; }; variants: { ...; }; } | null)[]' is not assignable to type 'CartItem[]'.
+  Type '{ id: string; quantity: number; variant_id: string; product_id: any; products: { id: any; name: any; slug: any; base_price: any; images: any; image_url: any; is_active: any; created_at: any; category: any; }; variants: { ...; }; } | null' is not assignable to type 'CartItem'.
+    Type 'null' is not assignable to type 'CartItem'.
+src/lib/cart/actions.ts(393,29): error TS2677: A type predicate's type must be assignable to its parameter's type.
+  Type 'CartItem' is not assignable to type '{ id: string; quantity: number; variant_id: string; product_id: any; products: { id: any; name: any; slug: any; base_price: any; images: any; image_url: any; is_active: any; created_at: any; category: any; }; variants: { ...; }; }'.
+    Types of property 'products' are incompatible.
+      Type 'Product' is missing the following properties from type '{ id: any; name: any; slug: any; base_price: any; images: any; image_url: any; is_active: any; created_at: any; category: any; }': image_url, is_active
+src/lib/notifications/actions.ts(158,10): error TS2678: Type '"warning"' is not comparable to type '"model_deleted" | "rate_limit" | "failover" | "health_check_failed" | "info"'.
+src/lib/notifications/actions.ts(159,10): error TS2678: Type '"error"' is not comparable to type '"model_deleted" | "rate_limit" | "failover" | "health_check_failed" | "info"'.
+src/lib/notifications/actions.ts(160,10): error TS2678: Type '"critical"' is not comparable to type '"model_deleted" | "rate_limit" | "failover" | "health_check_failed" | "info"'.

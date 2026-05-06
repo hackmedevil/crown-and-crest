@@ -1,0 +1,1082 @@
+﻿
+> crown-and-crest@0.1.0 lint
+> eslint
+
+
+C:\Users\user\Desktop\Web App\crown-and-crest\apply-index-migration.js
+   1:26  error    A `require()` style import is forbidden         @typescript-eslint/no-require-imports
+   2:7   warning  'fs' is assigned a value but never used         @typescript-eslint/no-unused-vars
+   2:12  error    A `require()` style import is forbidden         @typescript-eslint/no-require-imports
+  38:15  warning  'data' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  48:7   warning  'skipCount' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\jest.config.js
+  6:18  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\user\Desktop\Web App\crown-and-crest\scripts\migrate-product-enhancements.js
+  4:26  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  5:1   error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\user\Desktop\Web App\crown-and-crest\scripts\refresh-ranking.js
+  12:15  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  13:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\user\Desktop\Web App\crown-and-crest\scripts\run-migration.ts
+  16:11  warning  'data' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\setup-ranking-views.js
+   1:26  error    A `require()` style import is forbidden            @typescript-eslint/no-require-imports
+   2:12  error    A `require()` style import is forbidden            @typescript-eslint/no-require-imports
+   3:14  error    A `require()` style import is forbidden            @typescript-eslint/no-require-imports
+  35:19  warning  'data' is assigned a value but never used          @typescript-eslint/no-unused-vars
+  35:25  warning  'error' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  39:18  warning  'err' is defined but never used                    @typescript-eslint/no-unused-vars
+  56:19  warning  'rankingView' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  67:19  warning  'trendingView' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(account)\account\AccountSidebar.tsx
+  12:3  warning  'RotateCw' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(account)\account\returns\ReturnCard.tsx
+  15:58  warning  'isActive' is defined but never used                             @typescript-eslint/no-unused-vars
+  40:57  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  40:86  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(account)\account\returns\ReturnsClient.tsx
+  6:25  warning  'getReturnStatusLabel' is defined but never used  @typescript-eslint/no-unused-vars
+  6:47  warning  'getReturnReasonLabel' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(account)\account\returns\[returnId]\ReturnDetailsClient.tsx
+  85:62  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  85:91  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(account)\account\returns\new\ReturnWizardClient.tsx
+   18:58  error    Unexpected any. Specify a different type            @typescript-eslint/no-explicit-any
+  123:9   warning  'daysRemaining' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(account)\account\size-profile\SizeProfileClient.tsx
+   11:20  warning  'useEffect' is defined but never used           @typescript-eslint/no-unused-vars
+   39:26  warning  'showError' is assigned a value but never used  @typescript-eslint/no-unused-vars
+   58:78  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+  160:18  warning  'error' is defined but never used               @typescript-eslint/no-unused-vars
+  194:18  warning  'error' is defined but never used               @typescript-eslint/no-unused-vars
+  360:88  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(account)\account\size-profile\page.tsx
+  24:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(account)\account\wishlist\WishlistClient.tsx
+   4:8   warning  'Link' is defined but never used                    @typescript-eslint/no-unused-vars
+  12:3   warning  'getEmptyStateMessage' is defined but never used    @typescript-eslint/no-unused-vars
+  13:3   warning  'WISHLIST_CONFIG' is defined but never used         @typescript-eslint/no-unused-vars
+  14:3   warning  'WISHLIST_EVENTS' is defined but never used         @typescript-eslint/no-unused-vars
+  33:22  warning  'setIsRemoving' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(account)\account\wishlist\WishlistProductCard.tsx
+  28:10  warning  'showActions' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  61:9   warning  'handleAddToCart' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\brands\page.tsx
+  306:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\categories\page.tsx
+    4:39  warning  'MoreVertical' is defined but never used                                                                           @typescript-eslint/no-unused-vars
+   31:10  warning  'isDragging' is assigned a value but never used                                                                    @typescript-eslint/no-unused-vars
+   31:22  warning  'setIsDragging' is assigned a value but never used                                                                 @typescript-eslint/no-unused-vars
+   35:6   warning  React Hook useEffect has a missing dependency: 'loadCategories'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+   47:14  warning  'error' is defined but never used                                                                                  @typescript-eslint/no-unused-vars
+   62:14  warning  'error' is defined but never used                                                                                  @typescript-eslint/no-unused-vars
+   84:14  warning  'error' is defined but never used                                                                                  @typescript-eslint/no-unused-vars
+   89:18  warning  'handleReorder' is defined but never used                                                                          @typescript-eslint/no-unused-vars
+  111:14  warning  'error' is defined but never used                                                                                  @typescript-eslint/no-unused-vars
+  248:42  warning  'index' is defined but never used                                                                                  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\collections\page.tsx
+  16:22  error    Unexpected any. Specify a different type                                                                            @typescript-eslint/no-explicit-any
+  32:6   warning  React Hook useEffect has a missing dependency: 'loadCollections'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  44:14  warning  'error' is defined but never used                                                                                   @typescript-eslint/no-unused-vars
+  65:14  warning  'error' is defined but never used                                                                                   @typescript-eslint/no-unused-vars
+  98:14  warning  'error' is defined but never used                                                                                   @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\homepage\page.tsx
+    5:117  warning  'Plus' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+    5:123  warning  'Trash2' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  208:21   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\homepage\page.tsx:208:21
+  206 |
+  207 |                 if (reordered.length === sections.length) {
+> 208 |                     setOrderedSections(reordered)
+      |                     ^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  209 |                 }
+  210 |             }
+  211 |                                                                                                  react-hooks/set-state-in-effect
+  242:17   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\homepage\page.tsx:242:17
+  240 |             if (raw) {
+  241 |                 const parsed = JSON.parse(raw) as CarouselSlide[]
+> 242 |                 setCarouselSlides(parsed)
+      |                 ^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  243 |                 if (parsed.length > 0) {
+  244 |                     setSelectedSlideId(parsed[0].id)
+  245 |                 }  react-hooks/set-state-in-effect
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\management\brands\page.tsx
+  306:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\management\sku-manager\page.tsx
+   91:45  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  146:83  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  146:94  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  164:27  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  250:27  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\orders\OrdersClient.tsx
+  47:8   warning  React Hook useEffect has a missing dependency: 'fetchOrders'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  68:18  warning  'error' is defined but never used                                                                               @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\orders\[orderId]\ShipmentActions.tsx
+  27:18  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+  44:18  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\orders\[orderId]\page.tsx
+  132:49  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\page.tsx
+   3:82  warning  'Sparkles' is defined but never used                             @typescript-eslint/no-unused-vars
+  67:77  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\payments\page.tsx
+   6:3   warning  'CreditCard' is defined but never used  @typescript-eslint/no-unused-vars
+  74:14  warning  'error' is defined but never used       @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\products\actions.ts
+  216:46  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\services\page.tsx
+  1:8  warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\settings\StoreBrandingSection.tsx
+  10:12  warning  'settings' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  20:9   error    Error: Cannot access variable before it is declared
+
+`loadSettings` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\settings\StoreBrandingSection.tsx:20:9
+  18 |     // Load settings on mount
+  19 |     useEffect(() => {
+> 20 |         loadSettings()
+     |         ^^^^^^^^^^^^ `loadSettings` accessed before it is declared
+  21 |     }, [])
+  22 |
+  23 |     async function loadSettings() {
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\settings\StoreBrandingSection.tsx:23:5
+  21 |     }, [])
+  22 |
+> 23 |     async function loadSettings() {
+     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 24 |         setLoading(true)
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 25 |         const { data, error } = await getStoreSettingsAction()
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 26 |         if (data) {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 27 |             setSettings(data)
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 28 |             setStoreName(data.store_name)
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 29 |             setLogoUrl(data.logo_url)
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 30 |         }
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 31 |         setLoading(false)
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 32 |     }
+     | ^^^^^^ `loadSettings` is declared here
+  33 |
+  34 |     async function handleSave() {
+  35 |         if (!storeName.trim()) {  react-hooks/immutability
+  25:23  warning  'error' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  74:9   error    Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/ban-ts-comment
+  81:9   error    Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/ban-ts-comment
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\settings\actions.ts
+  24:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\settings\ai\AIConfigurationTab.tsx
+  26:14  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\settings\ai\actions.ts
+   79:16  warning  'testError' is defined but never used     @typescript-eslint/no-unused-vars
+  346:19  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  347:16  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  431:48  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  431:65  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  563:39  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  565:30  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  614:48  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\settings\page.tsx
+  5:55  warning  'TrendingUp' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\shipping\page.tsx
+  73:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\size-guides\SizeGuideForm.tsx
+    4:13  warning  'Plus' is defined but never used                                 @typescript-eslint/no-unused-vars
+  221:36  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\size-guides\page.tsx
+  45:6   warning  React Hook useEffect has a missing dependency: 'loadSizeGuides'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  75:14  warning  'error' is defined but never used                                                                                  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(admin)\admin\sku-manager\page.tsx
+   91:45  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  146:83  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  146:94  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  164:27  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  250:27  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\HomeClient.tsx
+    4:8    warning  'Image' is defined but never used                                @typescript-eslint/no-unused-vars
+    5:22   warning  'Check' is defined but never used                                @typescript-eslint/no-unused-vars
+  114:53   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  114:73   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  151:44   warning  'idx' is defined but never used                                  @typescript-eslint/no-unused-vars
+  403:83   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  403:103  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\cart\CartClient.tsx
+    7:31  warning  'ArrowRight' is defined but never used                                                                       @typescript-eslint/no-unused-vars
+   95:8   warning  React Hook useEffect has a missing dependency: 'loadCart'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  201:22  warning  'err' is defined but never used                                                                              @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\layout.tsx
+  24:11  warning  'supabaseDomain' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\order\failure\OrderFailureClient.tsx
+  24:34  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\order\success\OrderSuccessClient.tsx
+  3:21  warning  'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  6:33  warning  'MapPin' is defined but never used          @typescript-eslint/no-unused-vars
+  6:66  warning  'Home' is defined but never used            @typescript-eslint/no-unused-vars
+  9:15  warning  'OrderWithItems' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\product\[slug]\ProductDetailClient.tsx
+    40:17  error    Unexpected any. Specify a different type                                                                                                         @typescript-eslint/no-explicit-any
+   174:65  warning  React Hook useMemo has a missing dependency: 'getDefaultSelection'. Either include it or remove the dependency array                             react-hooks/exhaustive-deps
+   345:6   warning  React Hook useEffect has a missing dependency: 'searchParams'. Either include it or remove the dependency array                                  react-hooks/exhaustive-deps
+   366:6   warning  React Hook useEffect has missing dependencies: 'getEnabledSizesForColor' and 'selectedSize'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  1088:15  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                  react/no-unescaped-entities
+  1088:76  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                  react/no-unescaped-entities
+  1089:36  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\(storefront)\shop\ShopClient.tsx
+    7:46  warning  'ChevronLeft' is defined but never used                    @typescript-eslint/no-unused-vars
+    7:59  warning  'Filter' is defined but never used                         @typescript-eslint/no-unused-vars
+    7:67  warning  'ArrowUpDown' is defined but never used                    @typescript-eslint/no-unused-vars
+    7:80  warning  'ChevronDown' is defined but never used                    @typescript-eslint/no-unused-vars
+   30:12  warning  'mobileFiltersOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+   30:31  warning  'setMobileFiltersOpen' is assigned a value but never used  @typescript-eslint/no-unused-vars
+   31:12  warning  'mobileSortOpen' is assigned a value but never used        @typescript-eslint/no-unused-vars
+   44:11  warning  'sortBy' is assigned a value but never used                @typescript-eslint/no-unused-vars
+   47:11  warning  'allCategories' is assigned a value but never used         @typescript-eslint/no-unused-vars
+   48:11  warning  'sizes' is assigned a value but never used                 @typescript-eslint/no-unused-vars
+   79:11  warning  'toggleSize' is assigned a value but never used            @typescript-eslint/no-unused-vars
+   84:11  warning  'setSort' is assigned a value but never used               @typescript-eslint/no-unused-vars
+  131:11  warning  'totalFilters' is assigned a value but never used          @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\actions\coupons.ts
+   75:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   99:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  189:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\ai\status\route.ts
+  59:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  71:58  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  80:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  84:47  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\brands\[id]\route.ts
+  58:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\categories\route.ts
+  136:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\collections\route.ts
+  176:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\color-palettes\[id]\route.ts
+  78:49  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\color-palettes\route.ts
+  96:47  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\products\[id]\images\route.ts
+   44:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  281:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\products\ai-generate\route.ts
+  178:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\products\embeddings\route.ts
+  14:28  warning  'request' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\ranking\refresh\route.ts
+   40:50  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   46:66  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   48:14  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   51:9   warning  'viewError' is assigned a value but never used  @typescript-eslint/no-unused-vars
+   58:41  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   60:12  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+  122:27  warning  'request' is defined but never used             @typescript-eslint/no-unused-vars
+  125:32  warning  'error' is assigned a value but never used      @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\razorpay\analytics\route.ts
+  5:27  warning  'req' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\razorpay\diagnostics\route.ts
+  10:27  warning  'req' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\shiprocket\analytics\route.ts
+  5:27  warning  'req' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\shiprocket\diagnostics\route.ts
+  12:27  warning  'req' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\size-guides\route.ts
+   39:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   42:82  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   85:60  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   85:72  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  107:83  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  143:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  173:83  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\sms\diagnostics\route.ts
+   9:27  warning  'req' is defined but never used           @typescript-eslint/no-unused-vars
+  27:24  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  96:18  warning  'error' is defined but never used         @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\admin\variants\[id]\route.ts
+  88:15  warning  'isDuplicateBarcode' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\auth\csrf\route.ts
+  7:10  warning  'NextResponse' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\auth\session\route.ts
+  91:7  warning  'user' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\cloudinary\media\route.ts
+   49:50  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  115:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  132:22  error  A `require()` style import is forbidden   @typescript-eslint/no-require-imports
+  223:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\discovery\shop\route.ts
+  123:27  error  Unexpected any. Specify a different type                @typescript-eslint/no-explicit-any
+  263:9   error  'colorsFacet' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\products\ranking\category\route.ts
+   86:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  103:46  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\products\ranking\search\route.ts
+  21:11  warning  'minPrice' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  24:11  warning  'maxPrice' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  73:46  error    Unexpected any. Specify a different type       @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\products\ranking\trending\route.ts
+  76:47  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\products\recently-viewed\route.ts
+  82:13  warning  'data' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\razorpay\cod\eligibility\route.ts
+  24:31  warning  'customer_details' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\razorpay\order\route.ts
+  436:9  error  'finalAmount' is never reassigned. Use 'const' instead  prefer-const
+  441:9  error  'appliedTax' is never reassigned. Use 'const' instead   prefer-const
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\razorpay\promotions\apply\route.ts
+   19:29  warning  'customer_id' is assigned a value but never used  @typescript-eslint/no-unused-vars
+   68:17  error    Unexpected any. Specify a different type          @typescript-eslint/no-explicit-any
+   86:19  error    Unexpected any. Specify a different type          @typescript-eslint/no-explicit-any
+  102:39  error    Unexpected any. Specify a different type          @typescript-eslint/no-explicit-any
+  102:51  error    Unexpected any. Specify a different type          @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\razorpay\verify\route.ts
+   99:19  warning  'snapshotRes' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  136:19  warning  'commitResult' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\razorpay\webhook\route.ts
+  401:63  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  421:60  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  436:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  481:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  522:51  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  534:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  554:70  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\run-migration\route.ts
+  6:9  warning  'supabase' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\search\ai\route.ts
+    2:10  warning  'cookies' is defined but never used       @typescript-eslint/no-unused-vars
+  106:19  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\search\route.ts
+   36:11  warning  'categorySlug' is assigned a value but never used  @typescript-eslint/no-unused-vars
+   37:11  warning  'minPrice' is assigned a value but never used      @typescript-eslint/no-unused-vars
+   38:11  warning  'maxPrice' is assigned a value but never used      @typescript-eslint/no-unused-vars
+   43:11  warning  'tsquery' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  108:53  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\api\shiprocket\webhook\route.ts
+  57:16  error    Unexpected any. Specify a different type         @typescript-eslint/no-explicit-any
+  66:75  warning  'activities' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\checkout\CheckoutClient.tsx
+  165:33  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  200:32  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  309:47  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\checkout\OrderSummary.tsx
+  73:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\checkout\PaymentSection.tsx
+   84:40  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  113:21  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  113:40  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\not-found.tsx
+  10:57  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  10:78  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\app\shop\ShopClient.tsx
+  5:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\ErrorBoundary.tsx
+  48:31  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\Header.client.tsx
+   77:7  warning  'links' is assigned a value but never used          @typescript-eslint/no-unused-vars
+  109:9  warning  'currentSearch' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\HeroCarousel.tsx
+   67:9  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\HeroCarousel.tsx:67:9
+  65 |       try {
+  66 |         const parsed = JSON.parse(savedCarousel)
+> 67 |         setCarouselSlides(parsed)
+     |         ^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  68 |       } catch (err) {
+  69 |         console.error('Failed to parse carousel data:', err)
+  70 |       }  react-hooks/set-state-in-effect
+  104:9  warning  'slide' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\PhoneVerificationModal.tsx
+   29:66  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   56:32  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   58:36  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   62:33  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   67:29  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   85:28  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   87:32  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   91:29  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  111:44  error  Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  218:31  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\ProductCard.tsx
+  37:3  warning  'id' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\ProductGallery.tsx
+  23:3   warning  'cloudinaryBase' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  56:11  warning  'x' is assigned a value but never used               @typescript-eslint/no-unused-vars
+  57:11  warning  'y' is assigned a value but never used               @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\PurchaseBox.tsx
+    3:20  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+  106:14  warning  'err' is defined but never used        @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\RecentlyViewedProducts.tsx
+  6:10  warning  'Star' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\ReviewsSection.tsx
+   31:27  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  140:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\BulkActions.tsx
+  36:18  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\MediaManagerDialog.tsx
+    6:3   warning  'X' is defined but never used                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+   31:13  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+   55:3   warning  'allowMultiple' is assigned a value but never used                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+  680:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\SendSMSButton.tsx
+   18:23  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   19:25  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   39:50  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   67:18  warning  'error' is defined but never used         @typescript-eslint/no-unused-vars
+   94:18  warning  'error' is defined but never used         @typescript-eslint/no-unused-vars
+  147:18  warning  'error' is defined but never used         @typescript-eslint/no-unused-vars
+  370:69  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  389:69  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\ai\ModelDiscoveryPanel.tsx
+  167:9    warning  'handlePriorityChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  274:25   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  274:40   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  274:87   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  274:96   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  274:205  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  274:226  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  460:19   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  460:34   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\ai\ProviderKeyInput.tsx
+  135:41  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\ai\ProviderSelector.tsx
+  3:10  warning  'useState' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\ai\VerificationLog.tsx
+  91:47  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  91:54  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\coupons\CouponsList.tsx
+  42:14  warning  'err' is defined but never used           @typescript-eslint/no-unused-vars
+  42:19  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\notifications\NotificationsList.tsx
+    4:10  warning  'ExternalLink' is defined but never used                         @typescript-eslint/no-unused-vars
+  190:3   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\products\ProductForm.tsx
+     6:21  warning  'Plus' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+     6:38  warning  'HelpCircle' is defined but never used                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+     6:50  warning  'GripVertical' is defined but never used                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+     6:81  warning  'ImageIcon' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+    15:10  warning  'APPAREL_SIZES' is defined but never used                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+   331:8   warning  React Hook useEffect has missing dependencies: 'categories' and 'defaultOptions'. Either include them or remove the dependency array                                                                                                                                                     react-hooks/exhaustive-deps
+   530:8   warning  React Hook useEffect has missing dependencies: 'title' and 'variants'. Either include them or remove the dependency array                                                                                                                                                                react-hooks/exhaustive-deps
+   532:11  warning  'addOption' is assigned a value but never used                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+   535:11  warning  'removeOption' is assigned a value but never used                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   537:11  warning  'updateOptionName' is assigned a value but never used                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+   756:15  warning  'toastId' is assigned a value but never used                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+   785:41  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+   886:17  error    'payload' is never reassigned. Use 'const' instead                                                                                                                                                                                                                                       prefer-const
+   888:17  error    'skippedColumns' is never reassigned. Use 'const' instead                                                                                                                                                                                                                                prefer-const
+  1294:41  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  1382:84  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  1437:66  warning  'idx' is defined but never used                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\products\ProductFormV2.tsx
+  118:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  118:67  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  120:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  121:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  122:60  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  130:59  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  130:98  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\products\VariantImageSelector.tsx
+  16:5  warning  'variantId' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\products\tabs\MediaTab.tsx
+    6:8   warning  'Image' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   35:6   warning  React Hook useEffect has a missing dependency: 'fetchImages'. Either include it or remove the dependency array                                                                                                                                                                           react-hooks/exhaustive-deps
+  340:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\admin\products\tabs\VariantsTab.tsx
+  146:7   warning  'cartesian' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  257:53  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+  260:52  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+  283:20  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+  325:18  error    Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\auth\AuthModalProvider.tsx
+  241:6  warning  React Hook useEffect has a missing dependency: 'verifyOtp'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\examples\ShopWithRanking.tsx
+   14:30  warning  'useSortingUI' is defined but never used                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  138:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\homepage\BestSellers.tsx
+  27:43  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\homepage\PromoSection.tsx
+  55:16  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\navigation\AnnouncementBar.tsx
+  24:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\navigation\AnnouncementBar.tsx:24:5
+  22 |
+  23 |   useEffect(() => {
+> 24 |     setMounted(true)
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  25 |   }, [])
+  26 |
+  27 |   useEffect(() => {  react-hooks/set-state-in-effect
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\navigation\CartIcon.tsx
+  23:7  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\navigation\CartIcon.tsx:23:7
+  21 |   useEffect(() => {
+  22 |     if (itemCount !== prevCount && itemCount > prevCount) {
+> 23 |       setIsAnimating(true)
+     |       ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  24 |       const timer = setTimeout(() => setIsAnimating(false), 500)
+  25 |       setPrevCount(itemCount)
+  26 |       return () => clearTimeout(timer)  react-hooks/set-state-in-effect
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\navigation\MegaMenu.tsx
+  3:10  warning  'useState' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\navigation\Navbar.tsx
+  11:8  warning  'Breadcrumb' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+  74:5  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\navigation\Navbar.tsx:74:5
+  72 |   // Close mobile drawer when route changes
+  73 |   useEffect(() => {
+> 74 |     setIsMobileDrawerOpen(false)
+     |     ^^^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  75 |     setShowSearchBar(false)
+  76 |   }, [pathname])
+  77 |  react-hooks/set-state-in-effect
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\navigation\NavbarCategories.tsx
+  66:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  69:55  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  89:32  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\navigation\SearchBar.tsx
+  142:6   warning  React Hook useEffect has a missing dependency: 'CACHE_DURATION'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  163:31  warning  'product' is defined but never used                                                                                @typescript-eslint/no-unused-vars
+  511:78  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                    react/no-unescaped-entities
+  511:86  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                    react/no-unescaped-entities
+  528:38  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                    react/no-unescaped-entities
+  528:46  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                    react/no-unescaped-entities
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\AddToCart.tsx
+  25:3  warning  'product' is defined but never used         @typescript-eslint/no-unused-vars
+  33:3  warning  'selectionLabel' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\ProductDescription.tsx
+   3:10  warning  'useState' is defined but never used                @typescript-eslint/no-unused-vars
+  11:7   warning  'TABS' is assigned a value but only used as a type  @typescript-eslint/no-unused-vars
+  13:6   warning  'Tab' is defined but never used                     @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\ProductDetailPageClient.tsx
+   10:8  warning  'ProductInfo' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+   40:3  warning  'breadcrumbItems' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  108:5  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\ProductDetailPageClient.tsx:108:5
+  106 |
+  107 |   useEffect(() => {
+> 108 |     setQuantity(previous => Math.min(previous, maxQty))
+      |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  109 |   }, [maxQty])
+  110 |
+  111 |   const displayPrice = activeVariant?.final_price || pdpData.pricing.selling_price  react-hooks/set-state-in-effect
+  162:9  warning  'sizeGuideFields' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\ProductGridExamples.tsx
+   71:56  error  Unexpected any. Specify a different type                                                                                                                    @typescript-eslint/no-explicit-any
+  180:11  error  Do not use an `<a>` element to navigate to `/shop/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\ResponsiveVirtualizedGrid.tsx
+   4:8  warning  'VirtualizedProductGrid' is defined but never used        @typescript-eslint/no-unused-vars
+  60:3  warning  'products' is defined but never used                      @typescript-eslint/no-unused-vars
+  63:3  warning  'gap' is assigned a value but never used                  @typescript-eslint/no-unused-vars
+  64:3  warning  'onWishlistToggle' is defined but never used              @typescript-eslint/no-unused-vars
+  65:3  warning  'onQuickAdd' is defined but never used                    @typescript-eslint/no-unused-vars
+  77:9  warning  'responsiveRowHeight' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\SizeGuideModal.tsx
+  29:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\SizeRecommendation.tsx
+  28:5  warning  'onSizeSelect' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\VariantSelector.tsx
+   35:3   warning  'availabilityMatrix' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+   94:37  error    Compilation Skipped: Existing memoization could not be preserved
+
+React Compiler has skipped optimizing this component because the existing manual memoization could not be preserved. The inferred dependencies did not match the manually specified dependencies, which could cause the value to change more or less frequently than expected. The inferred dependency was `isSizeSellableForColor`, but the source dependencies were [selectedSize, colorGroups, hasSizeVariants, variants]. Inferred different dependency than source.
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\VariantSelector.tsx:94:37
+   92 |
+   93 |   // Get available colors for selected size
+>  94 |   const availableColorIds = useMemo(() => {
+      |                                     ^^^^^^^
+>  95 |     if (!hasSizeVariants) {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  96 |       return colorGroups
+      ΓÇª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 113 |       .map(cg => cg.id)
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 114 |   }, [selectedSize, colorGroups, hasSizeVariants, variants])
+      | ^^^^ Could not preserve existing manual memoization
+  115 |
+  116 |   // Sort sizes in standard order
+  117 |   const sortedSizes = useMemo(() => {  react-hooks/preserve-manual-memoization
+   94:37  error    Compilation Skipped: Existing memoization could not be preserved
+
+React Compiler has skipped optimizing this component because the existing manual memoization could not be preserved. The inferred dependencies did not match the manually specified dependencies, which could cause the value to change more or less frequently than expected. The inferred dependency was `isSizeSellableForColor`, but the source dependencies were [selectedSize, colorGroups, hasSizeVariants, variants]. Inferred different dependency than source.
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\VariantSelector.tsx:94:37
+   92 |
+   93 |   // Get available colors for selected size
+>  94 |   const availableColorIds = useMemo(() => {
+      |                                     ^^^^^^^
+>  95 |     if (!hasSizeVariants) {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  96 |       return colorGroups
+      ΓÇª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 113 |       .map(cg => cg.id)
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 114 |   }, [selectedSize, colorGroups, hasSizeVariants, variants])
+      | ^^^^ Could not preserve existing manual memoization
+  115 |
+  116 |   // Sort sizes in standard order
+  117 |   const sortedSizes = useMemo(() => {  react-hooks/preserve-manual-memoization
+  114:6   warning  React Hook useMemo has a missing dependency: 'isSizeSellableForColor'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react-hooks/exhaustive-deps
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\product\VirtualizedProductGrid.tsx
+   3:16  warning  'useMemo' is defined but never used               @typescript-eslint/no-unused-vars
+   6:8   warning  'ProductCard' is defined but never used           @typescript-eslint/no-unused-vars
+  65:3   warning  'products' is defined but never used              @typescript-eslint/no-unused-vars
+  66:3   warning  'columnCount' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  67:3   warning  'rowHeight' is assigned a value but never used    @typescript-eslint/no-unused-vars
+  68:3   warning  'gap' is assigned a value but never used          @typescript-eslint/no-unused-vars
+  69:3   warning  'onWishlistToggle' is defined but never used      @typescript-eslint/no-unused-vars
+  70:3   warning  'onQuickAdd' is defined but never used            @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\shop\MobileFilterBar.tsx
+  3:10  warning  'useState' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\shop\PriceFilter.tsx
+  3:20  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\shop\ShopClientWrapper.tsx
+  19:10  warning  'showSort' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\shop\ShopPage.tsx
+  78:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\shop\ShopPage.tsx:78:5
+  76 |
+  77 |   useEffect(() => {
+> 78 |     fetchData(query)
+     |     ^^^^^^^^^ Avoid calling setState() directly within an effect
+  79 |   }, [query, fetchData])
+  80 |
+  81 |   const updateQuery = (patch: Partial<ShopQueryState>, resetPage = true) => {  react-hooks/set-state-in-effect
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\skeletons\ProductGridSkeleton.tsx
+  10:3  warning  'title' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\components\ui\Button.tsx
+  2:10  warning  'tokens' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\hooks\useAutosave.ts
+  105:16  error  Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\hooks\useAutosave.ts:105:16
+  103 |     clearDraft,
+  104 |     hasDraft,
+> 105 |     lastSaved: lastSavedRef.current,
+      |                ^^^^^^^^^^^^^^^^^^^^ Cannot access ref value during render
+  106 |   };
+  107 | }
+  108 |  react-hooks/refs
+  105:16  error  Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\hooks\useAutosave.ts:105:16
+  103 |     clearDraft,
+  104 |     hasDraft,
+> 105 |     lastSaved: lastSavedRef.current,
+      |                ^^^^^^^^^^^^^^^^^^^^ Cannot access ref value during render
+  106 |   };
+  107 | }
+  108 |  react-hooks/refs
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\hooks\useProducts.ts
+  45:3  warning  'pageSize' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\actions.ts
+  181:3  warning  'imageUrl' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\client.ts
+   92:11  warning  'error' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  125:11  warning  'error' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  210:11  warning  'error' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\embeddings.ts
+  41:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  42:43  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\failover.ts
+  195:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\health-monitor.ts
+  17:33  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  39:13  warning  'HealthKey' is defined but never used     @typescript-eslint/no-unused-vars
+  44:27  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\search.ts
+  121:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  165:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\settings\actions.ts
+   33:28  warning  'error' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  335:11  warning  'decryptedKey' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  336:43  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ai\settings\discovery-actions.ts
+   94:23  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+   96:20  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  142:23  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  146:20  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+  231:13  warning  'generateText' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  319:32  error    Unexpected any. Specify a different type           @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\analytics\core-web-vitals.ts
+  44:51  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  46:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\analytics\events.ts
+   43:18  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  108:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  110:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  125:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\cloudinary\actions.ts
+  47:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\gtag.ts
+  12:51  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  13:16  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  27:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  29:51  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  30:16  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\logger.ts
+  18:18  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\notifications\actions.ts
+  19:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\observability\errorTracking.ts
+   12:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   76:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   89:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  100:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  112:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\observability\structuredLogging.ts
+   14:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  103:90  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\orders\feedback.ts
+  129:17  warning  'productSizeProfiles' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\products\buildAvailabilityMatrix.ts
+  86:24  warning  'value' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\products\calculatePricing.ts
+  24:5  warning  'cost_price' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\products\getProductForPDP.ts
+   48:11  warning  'RawProduct' is defined but never used                          @typescript-eslint/no-unused-vars
+   75:11  error    Unexpected any. Specify a different type                        @typescript-eslint/no-explicit-any
+   81:11  warning  'RawColorGroup' is defined but never used                       @typescript-eslint/no-unused-vars
+  131:3   warning  'rawUnit' is defined but never used                             @typescript-eslint/no-unused-vars
+  358:9   error    'colorGroupImagesMap' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\products\resolveProductImages.ts
+   18:15  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  164:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\products\validatePDP.ts
+   12:15  warning  'PDPData' is defined but never used       @typescript-eslint/no-unused-vars
+  440:8   error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  484:8   error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  512:8   error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  540:8   error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\ranking.ts
+  40:27  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\returns\actions.ts
+    4:44  warning  'ReturnItem' is defined but never used    @typescript-eslint/no-unused-vars
+  105:22  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\search\fallback.ts
+  15:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\search\lexical.ts
+  23:27  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  78:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\search\semantic.ts
+  50:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\security\csrf.ts
+  14:11  warning  'CSRFToken' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\seo\schema.ts
+  214:59  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\services\ProductService.ts
+  295:96  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\shiprocket\client.ts
+  10:10  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\shiprocket\shipment.ts
+   82:47  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  184:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\shiprocket\shipping.ts
+  114:3  warning  'codAmount' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\size-charts\admin-actions.ts
+   87:47  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  125:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\sizebook\admin-actions.ts
+  86:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\sizebook\user-actions.ts
+  146:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\sizebook\validation.ts
+  196:9  warning  'suggestedFields' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  198:7  error    'total' is never reassigned. Use 'const' instead      prefer-const
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\sms\providers\whatsapp-cloud.ts
+   57:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  124:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\sms\templates.ts
+   62:7   error    'cleaned' is never reassigned. Use 'const' instead  prefer-const
+  100:52  warning  'courier' is defined but never used                 @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\lib\wishlist\actions.ts
+   50:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  331:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\types\ai-provider.ts
+  38:10  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\types\grid.ts
+  6:24  warning  'ProductMedia' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\src\types\pdp.ts
+  124:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\user\Desktop\Web App\crown-and-crest\temp\check-template-status.js
+  9:1  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\user\Desktop\Web App\crown-and-crest\temp\create-whatsapp-templates.js
+  9:1  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\user\Desktop\Web App\crown-and-crest\temp\fix-css.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\user\Desktop\Web App\crown-and-crest\temp\fix-encoding.js
+  1:12  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+  2:7   warning  'path' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  2:14  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+
+C:\Users\user\Desktop\Web App\crown-and-crest\temp\fix-productform.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\user\Desktop\Web App\crown-and-crest\test-discovery-api.js
+  1:15  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\user\Desktop\Web App\crown-and-crest\test-ranking-queries.js
+  1:26  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\user\Desktop\Web App\crown-and-crest\tests\validators.test.ts
+   8:3  warning  'ProductUpdateSchema' is defined but never used  @typescript-eslint/no-unused-vars
+  10:3  warning  'VariantUpdateSchema' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\user\Desktop\Web App\crown-and-crest\verify-migrations.js
+   1:26  error    A `require()` style import is forbidden                     @typescript-eslint/no-require-imports
+  19:20  warning  'analyticsCount' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  31:20  warning  'productAnalyticsCount' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  43:20  warning  'rankingScoresCount' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  60:13  warning  'rankingView' is assigned a value but never used            @typescript-eslint/no-unused-vars
+  66:14  warning  'err' is defined but never used                             @typescript-eslint/no-unused-vars
+
+Γ£û 482 problems (254 errors, 228 warnings)
+  8 errors and 0 warnings potentially fixable with the `--fix` option.
+

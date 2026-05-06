@@ -1,0 +1,9 @@
+# Encryption key generated for AI features
+# Copy this entire line and add it to your .env.local file
+
+
+# Run this command in PowerShell to generate a new secure key:
+# -join ((65..90) + (97..122) + (48..57) | Get-Random -Count 32 | ForEach-Object {[char]$_})
+
+# Example format (REPLACE WITH YOUR OWN GENERATED KEY):
+AI_ENCRYPTION_KEY=K7mP2nQ9rS4tU6vW8xY0zA1bC3dE5fG7h8iJ9kL0

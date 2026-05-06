@@ -1,0 +1,11 @@
+﻿{
+    "components":  [
+                       {
+                           "text":  "Your order is being prepared!",
+                           "type":  "BODY"
+                       }
+                   ],
+    "category":  "UTILITY",
+    "name":  "order_in_production",
+    "language":  "en_US"
+}

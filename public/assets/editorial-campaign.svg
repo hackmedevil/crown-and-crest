@@ -1,0 +1,31 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6F4F1" />
+      <stop offset="0.55" stop-color="#EDE9E3" />
+      <stop offset="1" stop-color="#D9D1C7" />
+    </linearGradient>
+    <linearGradient id="fabric" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A2A2A" />
+      <stop offset="1" stop-color="#111111" />
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.65" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1600" fill="url(#bg)" />
+  <circle cx="960" cy="220" r="220" fill="#C6A769" fill-opacity="0.2" />
+  <circle cx="240" cy="1320" r="260" fill="#1C1C1C" fill-opacity="0.08" />
+
+  <path d="M540 240C610 230 680 240 740 270C780 290 820 330 840 380C870 460 860 560 830 640C800 720 770 760 760 820C740 940 760 1020 780 1180C790 1260 750 1360 680 1420C620 1470 540 1500 460 1480C380 1460 320 1400 300 1320C280 1220 300 1140 320 1060C340 980 360 900 340 820C330 760 300 720 270 640C230 550 220 460 260 380C300 310 380 260 470 240C490 236 515 236 540 240Z" fill="url(#fabric)" />
+
+  <path d="M520 360C590 350 650 360 700 390C730 410 760 440 770 470C790 530 770 620 720 680C670 740 640 790 630 860C620 960 650 1040 660 1160C670 1260 600 1340 520 1360C440 1380 360 1320 350 1230C340 1140 360 1040 380 970C400 900 420 840 400 780C380 700 330 640 320 560C310 480 340 410 400 380C440 360 480 360 520 360Z" fill="#111111" />
+
+  <path d="M430 500C500 470 590 470 660 520C690 540 720 580 720 630C720 710 650 760 590 820C530 880 510 940 510 1040C510 1110 530 1170 560 1260" stroke="#F6F4F1" stroke-opacity="0.35" stroke-width="18" stroke-linecap="round" />
+
+  <path d="M260 980C360 900 480 860 610 860C740 860 860 920 950 1030" stroke="url(#sheen)" stroke-width="140" stroke-linecap="round" />
+
+  <rect x="130" y="130" width="940" height="1340" rx="220" stroke="#1C1C1C" stroke-opacity="0.12" stroke-width="6" />
+</svg>

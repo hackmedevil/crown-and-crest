@@ -1,0 +1,115 @@
+﻿
+> crown-and-crest@0.1.0 build
+> next build
+
+node.exe :  ΓÜá 
+Warning: Next.js 
+inferred your 
+workspace root, but 
+it may not be correct.
+At line:1 char:1
++ & "C:\Program Files\
+nodejs/node.exe" "C:\U
+sers\user\AppData\Roam
+ing\n ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: ( ΓÜá Warni   
+ ng: N...not be co    
+rrect.:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+ We detected multiple 
+lockfiles and 
+selected the 
+directory of C:\Users\
+user\package-lock.json
+ as the root 
+directory.
+ To silence this 
+warning, set 
+`turbopack.root` in 
+your Next.js config, 
+or consider removing 
+one of the lockfiles 
+if it's not needed.
+   See https://nextjs.
+org/docs/app/api-refer
+ence/config/next-confi
+g-js/turbopack#root-di
+rectory for more 
+information.
+ Detected additional 
+lockfiles: 
+   * C:\Users\user\Des
+ktop\Web App\crown-and
+-crest\package-lock.js
+on
+
+   Γû▓ Next.js 16.0.10 (Turbopack)
+   - Environments: .env.local
+   - Experiments (use with caution):
+     ┬╖ serverActions
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully in 1685.1ms
+   Running TypeScript ...
+Failed to compile.
+
+./src/app/(storefront)
+/product/[slug]/page.t
+sx:142:51
+Type error: Type '{ 
+id: any; name: any; 
+slug: any; 
+base_price: any; 
+image_url: any; 
+category: any; }[]' 
+is not assignable to 
+type 'Product[]'.
+  Type '{ id: any; 
+name: any; slug: any; 
+base_price: any; 
+image_url: any; 
+category: any; }' is 
+missing the following 
+properties from type 
+'Product': 
+description, 
+product_variants
+
+[0m [90m 140 |[39m 
+    [36mconst[39m 
+relatedProducts 
+[33m=[39m 
+[36mawait[39m getRel
+atedProducts(product[
+33m.[39mcategory[33m
+,[39m 
+product[33m.[39mid)
+ [90m 141 |[39m
+[31m[1m>[22m[39m[
+90m 142 |[39m     
+[36mreturn[39m [33m
+<[39m[33mProductDeta
+ilClient[39m product
+[33m=[39m{product} re
+latedProducts[33m=[3
+9m{relatedProducts} 
+[33m/[39m[33m>[39m
+ [90m     |[39m     
+                      
+                      
+  [31m[1m^[22m[39m
+ [90m 143 |[39m }
+ [90m 144 |[39m[0m
+Next.js build worker 
+exited with code: 1 
+and signal: null
