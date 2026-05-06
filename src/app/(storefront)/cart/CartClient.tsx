@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation'
 import { Minus, Plus, Trash2, ArrowRight, Lock } from 'lucide-react'
 import { getGuestCart, updateGuestCartQuantity, removeFromGuestCart } from '@/lib/cart/guestCart'
 import { getCart, getGuestCartDetails, updateCartQuantity, removeFromCart as removeFromCartAction, syncGuestCart } from '@/lib/cart/actions'
+import CartItemSkeleton from '@/components/ui/CartItemSkeleton'
 import type { CartItem } from '@/types/cart'
 import { useToast } from '@/hooks/useToast'
 import { useAuth } from '@/context/AuthContext'
@@ -166,8 +167,23 @@ export default function CartClient({ user }: { user?: User }) {
 
     if (isLoading) {
         return (
-            <div className="min-h-[60vh] flex items-center justify-center">
-                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-black"></div>
+            <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12">
+                <h1 className="text-3xl font-display text-gray-900 mb-8">Shopping Cart</h1>
+                <div className="flex flex-col lg:flex-row gap-12">
+                    <div className="flex-1 space-y-6">
+                        {Array.from({ length: 3 }).map((_, idx) => (
+                            <CartItemSkeleton key={idx} />
+                        ))}
+                    </div>
+                    <div className="lg:w-80 space-y-6">
+                        <div className="bg-white p-6 rounded-lg border border-neutral-200">
+                            <div className="space-y-4">
+                                <div className="h-4 bg-neutral-200 rounded w-1/2 animate-pulse" />
+                                <div className="h-6 bg-neutral-200 rounded w-1/3 animate-pulse" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
