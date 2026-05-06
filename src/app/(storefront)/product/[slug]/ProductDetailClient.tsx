@@ -7,6 +7,7 @@ import type { PDPData } from '@/types/pdp'
 import { findMatchingVariant, getVariantSizeValue } from '@/lib/products/buildAvailabilityMatrix'
 import { computeSizeRecommendation } from '@/lib/recommendation'
 import { addToCart } from '@/lib/cart/actions'
+import { addToGuestCart } from '@/lib/cart/guestCart'
 import { useToast } from '@/hooks/useToast'
 import { useAuth } from '@/context/AuthContext'
 import ProductGallery from '@/components/product/ProductGallery'
@@ -519,7 +520,20 @@ export default function ProductDetailClient({
   const handleAddToCart = async (): Promise<boolean> => {
     const canProceed = isAuthenticated || isAuthContextAuthenticated
 
+    // If user is not authenticated, add to guest cart (localStorage) instead
     if (!canProceed) {
+      if (!safeSelectedVariant) {
+        showError('Please select a variant')
+        return false
+      }
+
+      const success = addToGuestCart(pdpData.product.id, safeSelectedVariant.id, 1)
+      if (success) {
+        showSuccess(`${pdpData.product.name}${selectionLabel ? ` (${selectionLabel})` : ''} has been added to your cart.`)
+        return true
+      }
+
+      // Fallback to requireAuth if guest add fails for any reason
       await requireAuth(async () => {
         await executeAddToCart()
       }, 'addToCart')

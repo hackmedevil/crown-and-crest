@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { useCart } from '@/context/CartContext'
+import { getGuestCartCount } from '@/lib/cart/guestCart'
 import BrandLogo from './BrandLogo'
 import { useAuth } from '@/context/AuthContext'
 
@@ -132,6 +133,8 @@ export default function HeaderClient({
     { href: '/about', label: 'About' },
   ]
 
+  const guestCartCount = typeof window !== 'undefined' ? getGuestCartCount() : 0
+
   return (
     <header className="w-full bg-white">
       <nav aria-label="Primary" className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
@@ -182,9 +185,9 @@ export default function HeaderClient({
               aria-label={`Cart with ${isMounted ? clientCartCount : cartCount} items`}
             >
               <ShoppingBagIcon />
-              {(isMounted ? clientCartCount : cartCount) > 0 && (
+              {( (isMounted ? clientCartCount : cartCount) || guestCartCount) > 0 && (
                 <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-neutral-900 text-xs font-semibold text-white">
-                  {(isMounted ? clientCartCount : cartCount) > 99 ? '99+' : (isMounted ? clientCartCount : cartCount)}
+                  {((isMounted ? clientCartCount : cartCount) || guestCartCount) > 99 ? '99+' : ((isMounted ? clientCartCount : cartCount) || guestCartCount)}
                 </span>
               )}
             </Link>
