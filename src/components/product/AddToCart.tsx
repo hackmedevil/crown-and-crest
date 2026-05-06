@@ -1,6 +1,7 @@
 'use client'
 
 import type { PDPProduct, PDPVariant, PDPPricing } from '@/types/pdp'
+import { useAuth } from '@/context/AuthContext'
 
 interface AddToCartProps {
   product: PDPProduct

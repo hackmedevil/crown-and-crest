@@ -4,6 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Star, ShoppingBag, Heart, Package } from 'lucide-react'
 import { useState } from 'react'
+import { useAuth } from '@/context/AuthContext'
+import { addToGuestCart } from '@/lib/cart/guestCart'
+import { useRouter } from 'next/navigation'
 
 /**
  * ProductCard Pricing Logic (To Be Implemented):
@@ -47,11 +50,28 @@ export default function ProductCard({
 }: ProductCardProps) {
   const [isWishlisted, setIsWishlisted] = useState(false)
   const [showAddedNotif, setShowAddedNotif] = useState(false)
+  const { isAuthenticated, requireAuth } = useAuth()
+  const router = useRouter()
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault()
+    e.stopPropagation()
     setShowAddedNotif(true)
     setTimeout(() => setShowAddedNotif(false), 2000)
+  }
+
+  const handleBuyNow = (e: React.MouseEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+
+    if (!isAuthenticated) {
+      void requireAuth(async () => {
+        router.push(`/product/${slug}`)
+      }, 'buyNow')
+      return
+    }
+
+    router.push(`/product/${slug}`)
   }
 
   const toggleWishlist = (e: React.MouseEvent) => {
@@ -113,14 +133,22 @@ export default function ProductCard({
             />
           </button>
 
-          {/* Add to Cart Button - On Hover */}
-          <button
-            onClick={handleAddToCart}
-            className="absolute bottom-0 left-0 right-0 py-3 bg-black text-white font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-2 hover:bg-gray-900"
-          >
-            <ShoppingBag className="w-4 h-4" />
-            Add to Cart
-          </button>
+          {/* Add to Cart & Buy Now Buttons - On Hover */}
+          <div className="absolute bottom-0 left-0 right-0 p-2 bg-black/80 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 flex gap-2">
+            <button
+              onClick={handleAddToCart}
+              className="flex-1 py-2 bg-white text-black font-semibold text-xs opacity-90 hover:opacity-100 transition-all rounded flex items-center justify-center gap-1"
+            >
+              <ShoppingBag className="w-3 h-3" />
+              Add
+            </button>
+            <button
+              onClick={handleBuyNow}
+              className="flex-1 py-2 bg-orange-500 text-white font-semibold text-xs hover:bg-orange-600 transition-colors rounded flex items-center justify-center gap-1"
+            >
+              Buy Now
+            </button>
+          </div>
         </div>
 
         {/* Product Info */}

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Minus, Plus, Trash2, ArrowRight, Lock } from 'lucide-react'
+import { Minus, Plus, Trash2, ArrowRight } from 'lucide-react'
 import { getGuestCart, updateGuestCartQuantity, removeFromGuestCart } from '@/lib/cart/guestCart'
 import { getCart, getGuestCartDetails, updateCartQuantity, removeFromCart as removeFromCartAction, syncGuestCart } from '@/lib/cart/actions'
 import CartItemSkeleton from '@/components/ui/CartItemSkeleton'
@@ -163,7 +163,18 @@ export default function CartClient({ user }: { user?: User }) {
         }
     }
 
-
+    const handleCheckout = () => {
+        if (!user) {
+            // Guests must login before checkout
+            void requireAuth(async () => {
+                router.push('/checkout')
+            }, 'checkout')
+            return
+        }
+        
+        // Authenticated users go directly to checkout
+        router.push('/checkout')
+    }
 
     if (isLoading) {
         return (
@@ -311,11 +322,11 @@ export default function CartClient({ user }: { user?: User }) {
                         </div>
 
                         <button
-                            disabled
-                            className="w-full bg-gray-300 text-gray-500 flex items-center justify-center gap-2 py-4 rounded-lg font-bold text-sm uppercase tracking-widest cursor-not-allowed"
+                            onClick={handleCheckout}
+                            className="w-full bg-black text-white flex items-center justify-center gap-2 py-4 rounded-lg font-bold text-sm uppercase tracking-widest hover:bg-gray-800 transition-colors"
                         >
-                            <Lock className="w-4 h-4" />
-                            Checkout Coming Soon
+                            <ArrowRight className="w-4 h-4" />
+                            Proceed to Checkout
                         </button>
 
                         <div className="mt-6 flex justify-center gap-4 opacity-50 grayscale">

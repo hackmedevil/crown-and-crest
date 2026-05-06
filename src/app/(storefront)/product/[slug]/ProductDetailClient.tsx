@@ -596,9 +596,19 @@ export default function ProductDetailClient({
   }
 
   const handleBuyNow = async (): Promise<void> => {
+    const canProceed = isAuthenticated || isAuthContextAuthenticated
+
+    if (!canProceed) {
+      // For guests: require auth, then redirect to checkout
+      await requireAuth(async () => {
+        router.push('/checkout')
+      }, 'buyNow')
+      return
+    }
+
+    // For authenticated users: add to cart then redirect to checkout
     const added = await handleAddToCart()
     if (added) {
-      // Redirect to checkout page
       router.push('/checkout')
     }
   }
