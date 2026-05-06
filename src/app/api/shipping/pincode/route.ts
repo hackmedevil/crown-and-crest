@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { checkPincodeServiceability } from '@/lib/shiprocket/pincode'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * Public API: Check Pincode Serviceability
  * 

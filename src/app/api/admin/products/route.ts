@@ -18,6 +18,8 @@ import { ProductCreateSchema, ProductQuerySchema } from '@/lib/validators';
 import { ProductService } from '@/lib/services';
 import { EmbeddingService } from '@/lib/services';
 
+export const dynamic = 'force-dynamic'
+
 /**
  * POST /api/admin/products
  * Create a new product

@@ -2,6 +2,8 @@ import { cookies } from 'next/headers'
 import { adminAuth } from '@/lib/firebase/admin'
 import { supabaseAdmin } from '@/lib/supabase/admin'
 import crypto from 'crypto'
+export const dynamic = 'force-dynamic'
+
 
 const SESSION_EXPIRY_DAYS = 7
 const SESSION_EXPIRY_SECONDS = SESSION_EXPIRY_DAYS * 24 * 60 * 60

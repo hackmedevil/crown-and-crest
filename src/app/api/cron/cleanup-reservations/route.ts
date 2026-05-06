@@ -4,6 +4,8 @@ import { logInfo, logError } from '@/lib/observability/structuredLogging'
 import { trackCronError } from '@/lib/observability/errorTracking'
 import { cronHealthMetrics, reportCronMetrics } from '@/lib/observability/cronMonitoring'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * Cleanup job for expired inventory reservations
  * 

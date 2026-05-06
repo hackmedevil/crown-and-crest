@@ -3,6 +3,8 @@ import { revalidatePath } from 'next/cache'
 import { getCurrentUser } from '@/lib/auth'
 import { supabaseAdmin } from '@/lib/supabase/admin'
 
+export const dynamic = 'force-dynamic'
+
 function appendJsonArray(existing: unknown, item: Record<string, unknown>) {
   const current = Array.isArray(existing) ? existing : []
   return [...current, item]

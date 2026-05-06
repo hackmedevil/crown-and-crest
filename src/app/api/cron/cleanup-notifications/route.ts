@@ -1,6 +1,8 @@
 ﻿import { NextRequest, NextResponse } from 'next/server'
 import { cleanupExpiredNotifications } from '@/lib/notifications/actions'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * Notification Cleanup Cron Job
  * Runs daily to delete expired notifications

@@ -17,6 +17,8 @@ import {
 import { VariantUpdateSchema, VariantIdSchema } from '@/lib/validators';
 import { VariantService } from '@/lib/services';
 
+export const dynamic = 'force-dynamic'
+
 /**
  * PATCH /api/admin/variants/[id]
  * Update an existing variant

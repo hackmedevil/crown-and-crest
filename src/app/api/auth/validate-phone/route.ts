@@ -2,6 +2,8 @@
 import { adminAuth } from '@/lib/firebase/admin'
 import { getCurrentUser } from '@/lib/auth'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * Phone Validation API
  * 

@@ -6,6 +6,8 @@ import { sendSMS, wasSMSSent } from '@/lib/sms/sms'
 import { generateSMSMessage, getTrackingUrl } from '@/lib/sms/templates'
 import { NotificationType } from '@/lib/sms/types'
 
+export const dynamic = 'force-dynamic'
+
 type AdminOrderAction =
   | 'MARK_PAID'
   | 'SEND_TO_PROVIDER'

@@ -6,6 +6,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getCloudinaryAdmin } from '@/lib/cloudinary/server'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * GET /api/cloudinary/media
  * List all Cloudinary assets with pagination

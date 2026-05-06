@@ -8,6 +8,8 @@ import { sendSMS } from '@/lib/sms/sms'
 import { generateSMSMessage, getTrackingUrl } from '@/lib/sms/templates'
 import { NotificationType } from '@/lib/sms/types'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * POST /api/sms/send
  * Send SMS notification for an order

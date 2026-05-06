@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { POST as shiprocketWebhook } from '@/app/api/shiprocket/webhook/route'
 
+export const dynamic = 'force-dynamic'
+
 export async function GET() {
   return NextResponse.json({ ok: true })
 }

@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server'
 import { getCurrentUser } from '@/lib/auth'
 import { getAccountOverview } from '@/lib/account/overview'
 
+export const dynamic = 'force-dynamic'
+
 export async function GET() {
   const user = await getCurrentUser()
   if (!user) {

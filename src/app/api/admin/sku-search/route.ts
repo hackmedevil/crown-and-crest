@@ -2,6 +2,8 @@ import { supabaseServer } from '@/lib/supabase/server'
 import { requireAdmin } from '@/lib/admin/auth'
 import { NextRequest, NextResponse } from 'next/server'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * GET /api/admin/sku-search?sku=CC-JACKET-001
  * Search for products/variants by SKU

@@ -3,6 +3,8 @@ import { z } from 'zod'
 import { requireAdmin } from '@/lib/admin/auth'
 import { generateText } from '@/lib/ai/actions'
 
+export const dynamic = 'force-dynamic'
+
 type AIRequestBody = {
   name?: string
   category?: string

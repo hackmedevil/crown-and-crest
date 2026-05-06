@@ -4,6 +4,8 @@ import { supabaseAdmin } from '@/lib/supabase/admin'
 import { sendSMS } from '@/lib/sms/sms'
 import { generateSMSMessage, getTrackingUrl } from '@/lib/sms/templates'
 
+export const dynamic = 'force-dynamic'
+
 export async function POST(
   req: NextRequest,
   { params }: { params: Promise<{ orderId: string }> }

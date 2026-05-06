@@ -6,6 +6,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getCurrentUser } from '@/lib/auth'
 import { fetchQikinkToken } from '@/lib/qikink/client'
 
+export const dynamic = 'force-dynamic'
+
 export async function POST(req: NextRequest) {
   try {
     const user = await getCurrentUser()

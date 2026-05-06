@@ -7,6 +7,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { performQikinkSync } from '@/lib/qikink/sync'
 
+export const dynamic = 'force-dynamic'
+
 export async function GET(req: NextRequest) {
   // Verify cron secret
   const cronSecret = process.env.CRON_SECRET

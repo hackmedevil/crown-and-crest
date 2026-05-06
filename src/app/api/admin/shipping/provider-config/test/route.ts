@@ -8,6 +8,8 @@ import {
 } from '@/lib/shipping/provider-config'
 import { testSupplierConnection } from '@/lib/shipping/supplier-provider'
 
+export const dynamic = 'force-dynamic'
+
 export async function POST(req: NextRequest) {
   try {
     const auth = await assertAdmin()

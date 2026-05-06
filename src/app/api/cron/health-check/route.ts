@@ -1,6 +1,8 @@
 ﻿import { NextRequest, NextResponse } from 'next/server'
 import { runHealthCheck } from '@/lib/ai/health-monitor'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * Health Check Cron Job
  * Runs every 30 minutes to check AI model availability

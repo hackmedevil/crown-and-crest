@@ -1,12 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/lib/supabase/admin'
 import {
-  assertAdmin,
+    assertAdmin,
   ensureSupplierConfig,
   isMissingSupplierConfigTableError,
   sanitizeSupplierConfigPayload,
   SUPPLIER_PROVIDER_KEY,
 } from '../../../../../lib/shipping/provider-config'
+export const dynamic = 'force-dynamic'
+
 
 export async function GET() {
   try {

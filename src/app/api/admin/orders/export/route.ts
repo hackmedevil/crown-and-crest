@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/lib/supabase/admin'
 import { getCurrentUser } from '@/lib/auth'
+export const dynamic = 'force-dynamic'
+
 
 /**
  * Admin API: Export Orders to CSV

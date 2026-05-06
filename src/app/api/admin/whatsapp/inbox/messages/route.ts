@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getCurrentUser } from '@/lib/auth'
 import { supabaseAdmin } from '@/lib/supabase/admin'
 
+export const dynamic = 'force-dynamic'
+
 async function ensureAdmin() {
   const user = await getCurrentUser()
   if (!user) return { ok: false as const, status: 401, error: 'Unauthorized' }

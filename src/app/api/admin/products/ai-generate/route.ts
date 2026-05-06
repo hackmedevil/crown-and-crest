@@ -5,6 +5,8 @@ import { generateEmbedding, generateProductEmbedding } from '@/lib/ai/embeddings
 import { supabaseServer } from '@/lib/supabase/server'
 import { z } from 'zod'
 
+export const dynamic = 'force-dynamic'
+
 interface AIRequestBody {
   productId?: string
   name?: string

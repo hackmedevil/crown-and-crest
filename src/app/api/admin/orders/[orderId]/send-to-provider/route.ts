@@ -16,6 +16,8 @@ import { supabaseAdmin } from '@/lib/supabase/admin'
 import { createQikinkOrder } from '@/lib/qikink/client'
 import { QikinkCreateOrderRequest, QikinkShippingAddress, QikinkLineItem } from '@/lib/qikink/types'
 
+export const dynamic = 'force-dynamic'
+
 function appendTimeline(existing: unknown, event: Record<string, unknown>) {
   const current = Array.isArray(existing) ? existing : []
   return [...current, event]

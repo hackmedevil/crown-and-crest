@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/lib/supabase/admin'
 
+export const dynamic = 'force-dynamic'
+
 type WhatsAppStatus = 'sent' | 'delivered' | 'read' | 'failed'
 
 function mapStatus(status?: string): { appStatus: 'SENT' | 'DELIVERED' | 'FAILED'; deliveredAt?: string } {

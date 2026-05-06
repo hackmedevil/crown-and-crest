@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server'
 import { requireAdmin } from '@/lib/admin/auth'
 import { supabaseAdmin } from '@/lib/supabase/admin'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * Admin-only endpoint to manually release expired reservations.
  * Calls release_expired_reservations() RPC and returns processed count.

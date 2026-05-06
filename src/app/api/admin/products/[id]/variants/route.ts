@@ -17,6 +17,8 @@ import {
 import { VariantCreateSchema, ProductIdSchema } from '@/lib/validators';
 import { VariantService } from '@/lib/services';
 
+export const dynamic = 'force-dynamic'
+
 /**
  * POST /api/admin/products/[id]/variants
  * Create a new variant for a product

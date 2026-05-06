@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server'
 import { requireAdmin } from '@/lib/admin/auth'
 import { processBatchEmbeddingJobs } from '@/lib/ai/embedding-processor'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * Process pending embedding jobs
  * POST /api/admin/embeddings/process

@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { addToCart as serverAddToCart } from '@/lib/cart/actions'
 
+export const dynamic = 'force-dynamic'
+
 export async function POST(req: Request) {
   try {
     const body = await req.json()

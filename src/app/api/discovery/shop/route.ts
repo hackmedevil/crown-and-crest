@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/lib/supabase/admin'
 
+export const dynamic = 'force-dynamic'
+
 type SortOption = 'ranking' | 'price_low_high' | 'price_high_low' | 'newest' | 'rating'
 
 type ProductRow = {

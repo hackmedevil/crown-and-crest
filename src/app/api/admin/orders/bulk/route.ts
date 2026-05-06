@@ -4,6 +4,8 @@ import { getCurrentUser } from '@/lib/auth'
 import { OrderStatus } from '@/types/order'
 import { revalidatePath } from 'next/cache'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * Admin API: Bulk Update Order Status
  * 

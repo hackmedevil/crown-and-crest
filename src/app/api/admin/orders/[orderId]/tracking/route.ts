@@ -9,6 +9,8 @@ import { supabaseAdmin } from '@/lib/supabase/admin'
 import { sendSMS, wasSMSSent } from '@/lib/sms/sms'
 import { generateSMSMessage, getTrackingUrl } from '@/lib/sms/templates'
 
+export const dynamic = 'force-dynamic'
+
 function appendTimeline(existing: unknown, event: Record<string, unknown>) {
   const current = Array.isArray(existing) ? existing : []
   return [...current, event]

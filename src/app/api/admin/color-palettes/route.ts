@@ -2,6 +2,8 @@ import { supabaseServer } from '@/lib/supabase/server'
 import { requireAdmin } from '@/lib/admin/auth'
 import { NextRequest, NextResponse } from 'next/server'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * GET /api/admin/color-palettes
  * Fetch all color palettes with optional filtering

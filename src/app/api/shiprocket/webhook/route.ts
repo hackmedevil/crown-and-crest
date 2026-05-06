@@ -6,6 +6,8 @@ import { sendSMS } from '@/lib/sms/sms'
 import { generateSMSMessage, getTrackingUrl } from '@/lib/sms/templates'
 import { OrderStatus } from '@/types/order'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * Shiprocket Webhook Handler
  * 

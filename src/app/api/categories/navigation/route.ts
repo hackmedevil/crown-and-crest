@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { supabaseServer } from '@/lib/supabase/server'
 
+export const dynamic = 'force-dynamic'
+
 function isMissingSchemaError(error: unknown): boolean {
   const code = typeof error === 'object' && error && 'code' in error
     ? String((error as { code?: string }).code)

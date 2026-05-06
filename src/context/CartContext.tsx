@@ -129,7 +129,6 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         ...existing,
         quantity: existing.quantity + item.quantity,
       }
-      const next = [...next]
 
       // Background sync to server for updated quantity
       try {

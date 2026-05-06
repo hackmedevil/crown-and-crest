@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { supabaseServer } from '@/lib/supabase/server'
 
+export const dynamic = 'force-dynamic'
+
 export const revalidate = 300 // 5 minutes
 
 function isMissingSchemaError(error: unknown): boolean {

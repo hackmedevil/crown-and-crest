@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { requireAdmin } from '@/lib/admin/auth'
 import { supabaseServer } from '@/lib/supabase/server'
 
+export const dynamic = 'force-dynamic'
+
 const TABLE_CANDIDATES = ['wash_instructions', 'wash_instruction_profiles']
 
 type WashInstructionRow = {

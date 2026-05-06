@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getCurrentUser } from '@/lib/auth'
 
+export const dynamic = 'force-dynamic'
+
 function maskKey(value?: string | null) {
   if (!value) return null
   if (value.length <= 6) return `${value.slice(0, 2)}***${value.slice(-1)}`

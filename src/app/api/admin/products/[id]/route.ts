@@ -18,6 +18,8 @@ import {
 import { ProductUpdateSchema, ProductIdSchema } from '@/lib/validators';
 import { ProductService, EmbeddingService } from '@/lib/services';
 
+export const dynamic = 'force-dynamic'
+
 /**
  * GET /api/admin/products/[id]
  * Retrieve a single product with all details

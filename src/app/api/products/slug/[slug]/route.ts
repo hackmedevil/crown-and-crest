@@ -3,6 +3,8 @@ import { getProductForPDP } from '@/lib/products/getProductForPDP'
 import { supabaseServer } from '@/lib/supabase/server'
 import type { GridProduct } from '@/types/grid'
 
+export const dynamic = 'force-dynamic'
+
 interface ReviewSummary {
   average: number
   total: number

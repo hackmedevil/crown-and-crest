@@ -6,6 +6,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getCurrentUser } from '@/lib/auth'
 
+export const dynamic = 'force-dynamic'
+
 function isMetaTokenExpired(error: any): boolean {
   const code = Number(error?.code || 0)
   const message = String(error?.message || '').toLowerCase()

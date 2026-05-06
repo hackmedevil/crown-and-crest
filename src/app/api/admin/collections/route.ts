@@ -2,6 +2,8 @@ import { supabaseServer } from '@/lib/supabase/server'
 import { requireAdmin } from '@/lib/admin/auth'
 import { NextRequest, NextResponse } from 'next/server'
 
+export const dynamic = 'force-dynamic'
+
 const PROTECTED_COLLECTION_SLUGS = new Set(['new-arrivals', 'new-arrival'])
 
 async function getCollectionById(id: string) {
