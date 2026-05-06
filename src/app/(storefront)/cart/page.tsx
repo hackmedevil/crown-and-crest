@@ -2,6 +2,8 @@ import { Metadata } from 'next'
 import { getCurrentUser } from '@/lib/auth'
 import CartClient from './CartClient'
 
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
     title: 'Shopping Cart | Lumière',
     description: 'Review your selected items and proceed to secure checkout.',
