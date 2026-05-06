@@ -20,7 +20,7 @@ export default function FullPageSkeleton({ className = '' }: { className?: strin
         </div>
       </div>
 
-      <style jsx>{`
+      {/* Using Tailwind font stack; avoid styled-jsx so component can be used in Server Components */}
         .font-display { font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
       `}</style>
     </div>
